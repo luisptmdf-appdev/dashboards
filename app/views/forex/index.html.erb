@@ -1,0 +1,13 @@
+<h1>Currency pairs</h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+  <% @currency_key_vector.each do |currency_key| %>
+  <li>
+    <a href= <%= "/forex/" + currency_key.to_s %>>
+      Convert 1 <%= currency_key %> to...
+    </a>
+  </li>
+  <% end %>
+</ul>
